@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div id="header">
+        <h1>Drawing Machine</h1>
+    </div>
+    <div id="controls">
+        <div class="control-item">
+            <label for="color-picker">Color Picker:</label>
+            <input type="color" id="color-picker" value="#000000">
+        </div>
+        <div class="control-item">
+            <label for="line-size-slider">Line Size:</label>
+            <input type="range" id="line-size-slider" min="1" max="50" value="5">
+        </div>
+        <div class="control-item">
+            <button id="square-mode-toggle">Square Mode</button>
+        </div>
+        <div class="control-item">
+            <button id="save-button">Save Image</button>
+        </div>
+        <div class="control-item">
+            <button id="reset-button">Reset Image</button>
+        </div>
+    </div>
+    <div id="drawingSpace">
+        <div id="sketch-holder"></div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
